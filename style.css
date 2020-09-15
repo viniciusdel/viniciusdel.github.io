@@ -13,6 +13,14 @@ body{
     overflow: hidden;
 }
 
+.flex-container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+}
+
 #main-header{
     background-color: black;
     color: white;
@@ -45,6 +53,10 @@ body{
     color: orange;
   }
 
+#navbar a:active {
+    color: orange;
+}
+
 #showcase{
     background-image: url('showcase.jpg');
     min-height: 250px;
@@ -58,6 +70,21 @@ body{
     font-size: 50px;
     line-height: 1.6em;
     padding-top: 30px;
+    text-shadow: 2px 2px #333;
+}
+
+#showcase-small{
+    background-image: url('showcase.jpg');
+    min-height: 150px;
+    background-position: center right;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase-small h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.6em;
     text-shadow: 2px 2px #333;
 }
 
@@ -79,12 +106,27 @@ body{
     list-style: none;
 }
 
+.box{
+    padding: 10px;
+    min-width: 400px;
+    border: 1px lightgray solid;
+    margin: 3px;
+}
+
+.box h3{
+    text-align: center;
+    font-size: 18px;
+}
+
 #main-footer{
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 12px;
-    margin-top: 250px;
+    padding: 3px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 @media(max-width: 600px){
