@@ -7,15 +7,13 @@ body{
     margin: 0;
 }
 
-
-
 .container{
     margin: auto;
     width: 80%;
     overflow: hidden;
 }
 
-.flex-container{
+#boxes{
     display: flex;
     margin: auto;
     width: 80%;
@@ -110,10 +108,25 @@ body{
 }
 
 .box{
+    display: flex;
     padding: 10px;
     min-width: 400px;
     border: 1px lightgray solid;
     margin: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-link{
+    text-decoration: none;
+}
+
+.box-link :hover{
+    background-color:orange;
+}
+
+.box img{
+    width: 60px;
 }
 
 .box h3{
@@ -121,6 +134,15 @@ body{
     font-size: 24px;
     color: #333;
     text-shadow: 2px 2px lightgray;
+}
+
+.mini-box-1{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.mini-box-2{
+    flex: 5;
 }
 
 #main-footer{
@@ -142,5 +164,11 @@ body{
     #sidebar{
         width: 100%;
         float: none;
+    }
+}
+
+@media(max-width: 1200px){
+    #boxes{
+        flex-direction: column;
     }
 }
