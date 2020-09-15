@@ -59,7 +59,7 @@ body{
 }
 
 #showcase{
-    background-image: url('showcase.jpg');
+    background-image: url('images/showcase.jpg');
     min-height: 250px;
     background-position: center right;
     margin-bottom: 30px;
@@ -75,7 +75,7 @@ body{
 }
 
 #showcase-small{
-    background-image: url('showcase.jpg');
+    background-image: url('images/showcase.jpg');
     min-height: 150px;
     background-position: center right;
     margin-bottom: 30px;
