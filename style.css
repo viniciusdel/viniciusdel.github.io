@@ -1,3 +1,7 @@
+:root {
+    --myOrange: rgb(228, 148, 0);
+  }
+
 body{
     background-color: #f4f4f4;
     color: #555;
@@ -33,6 +37,18 @@ body{
     padding-left: 10%;
 }
 
+.page-title{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 130px;
+}
+
+.page-title h1{
+    font-size: 30;
+    color: rgb(228, 148, 0);
+    text-shadow: 2px 2px #333;
+}
+
 #navbar{
     background-color: #333;
     color: white;
@@ -55,11 +71,11 @@ body{
 }
 
 #navbar a:hover {
-    color: orange;
+    color: var(--myOrange);
   }
 
 #navbar a:active {
-    color: orange;
+    color: var(--myOrange);
 }
 
 #showcase{
@@ -75,21 +91,6 @@ body{
     font-size: 50px;
     line-height: 1.6em;
     padding-top: 30px;
-    text-shadow: 2px 2px #333;
-}
-
-#showcase-small{
-    background-image: url('images/showcase.jpg');
-    min-height: 150px;
-    background-position: center right;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-#showcase-small h1{
-    color: white;
-    font-size: 50px;
-    line-height: 1.6em;
     text-shadow: 2px 2px #333;
 }
 
@@ -137,7 +138,7 @@ body{
 }
 
 .box-link :hover{
-    background-color:orange;
+    background-color: var(--myOrange);
 }
 
 .box img{
@@ -164,11 +165,14 @@ body{
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 3px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+#main-footer p{
+    margin: 3px;
 }
 
 @media(max-width: 600px){
