@@ -71,6 +71,10 @@ body{
     box-sizing: border-box;
 }
 
+#sidebar ul{
+    list-style: none;
+}
+
 #main-footer{
     background-color: #333;
     color: white;
