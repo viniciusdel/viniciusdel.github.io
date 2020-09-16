@@ -1,0 +1,7 @@
+Todo in website:
+
+    1. [+]  Projects and 'see more' functionality to show / hide projects.
+    2. [+]  Gallery with 'click into' picture functionality.
+    3. [+]  Make 'recent achievements prettier' and hover prone.
+    4. [+]  Add phone number when clicked. 
+    5. [+]  Maybe add some animations? Idk.
