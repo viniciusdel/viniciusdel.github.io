@@ -17,6 +17,12 @@ body{
     overflow: hidden;
 }
 
+.container-2{
+    margin: auto;
+    width: 60%;
+    overflow: hidden;
+}
+
 #boxes{
     display: flex;
     margin: auto;
@@ -41,12 +47,6 @@ body{
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 130px;
-}
-
-.page-title h1{
-    font-size: 30;
-    color: rgb(228, 148, 0);
-    text-shadow: 2px 2px #333;
 }
 
 #navbar{
@@ -131,6 +131,45 @@ body{
     margin: 3px;
     justify-content: center;
     align-items: center;
+}
+
+.box li{
+    list-style: none;
+}
+
+.list-container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.list-item{
+    display: flex;
+    padding: 10px;
+    border: 1px lightgray solid;
+    margin: 3px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-item img{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.list-item h1{
+    font-size: 1.75em;
+    padding-right: 50px;
+}
+
+.list-item:hover{
+    background-color: var(--myOrange);
+}
+
+li{
+    list-style: none;
 }
 
 .box-link{
