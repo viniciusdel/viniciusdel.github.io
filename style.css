@@ -219,7 +219,7 @@ li {
     margin-top: 10px;
 }
 
-.active, .accordion:hover {
+.accordion:hover {
     background-color: #ccc;
 }
 
