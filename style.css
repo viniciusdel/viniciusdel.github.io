@@ -1,8 +1,8 @@
 :root {
     --myOrange: rgb(228, 148, 0);
-  }
+}
 
-body{
+body {
     background-color: #f4f4f4;
     color: #555;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,20 +11,24 @@ body{
     margin: 0;
 }
 
-.container{
+.container {
     margin: auto;
     width: 80%;
     overflow: hidden;
 }
 
-.container-2{
+a {
+    text-decoration: none;
+}
+
+.container-2 {
     display: flex;
     margin: auto;
     width: 60%;
     overflow: hidden;
 }
 
-#boxes{
+#boxes {
     display: flex;
     margin: auto;
     width: 80%;
@@ -33,7 +37,7 @@ body{
     align-content: center;
 }
 
-#main-header{
+#main-header {
     background-color: black;
     color: white;
     text-shadow: #555;
@@ -41,46 +45,50 @@ body{
     text-align: left;
 }
 
-#main-header h1{
+#main-header h1 {
     padding-left: 10%;
 }
 
-.page-title{
+.page-title {
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 130px;
 }
 
-#navbar{
+.navbar {
     background-color: #333;
     color: white;
 }
 
-#navbar ul{
+.navbar ul {
     padding: 0;
     list-style: none;
 }
 
-#navbar li{
+.navbar li {
     display: inline;
 }
 
-#navbar a{
+.navbar a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     padding-right: 15px;
 }
 
-#navbar a:hover {
-    color: var(--myOrange);
-  }
-
-#navbar a:active {
+.navbar a:hover {
     color: var(--myOrange);
 }
 
-#showcase{
+.navbar a:active {
+    color: var(--myOrange);
+}
+
+.navbar .curr-nav{
+    font-weight: 700;
+}
+
+#showcase {
     background-image: url('images/showcase.jpg');
     min-height: 250px;
     background-position: center right;
@@ -88,7 +96,7 @@ body{
     text-align: center;
 }
 
-#showcase h1{
+#showcase h1 {
     color: white;
     font-size: 50px;
     line-height: 1.6em;
@@ -96,27 +104,27 @@ body{
     text-shadow: 2px 2px #333;
 }
 
-#main{
+#main {
     float: left;
     width: 70%;
     padding: 0 30px;
     box-sizing: border-box;
 }
 
-#sidebar{
+#sidebar {
     float: right;
     width: 30%;
     padding: 0 10px;
     box-sizing: border-box;
 }
 
-#sidebar ul{
+#sidebar ul {
     list-style: none;
     border: 1px #555;
     padding-left: 0;
 }
 
-#sidebar li{
+#sidebar li {
     border-radius: 0%;
     width: 70%;
     background: #e6e6e6;
@@ -125,7 +133,7 @@ body{
     text-align: right;
 }
 
-.box{
+.box {
     display: flex;
     padding: 10px;
     min-width: 400px;
@@ -135,15 +143,17 @@ body{
     align-items: center;
 }
 
-.list-container{
+.list-container {
+    flex: 1;
     display: flex;
     margin: auto;
     width: 80%;
     overflow: hidden;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.list-item{
+.list-item {
     display: flex;
     padding: 10px;
     border: 1px lightgray solid;
@@ -153,49 +163,75 @@ body{
     text-decoration: none;
 }
 
-.list-item{
+.list-item-2 {
     display: flex;
     padding: 10px;
-    border: 1px lightgray solid;
     margin: 3px;
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
 }
 
-a{
-    text-decoration: none;
+.list-item-2 img {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.list-item h3{
+.list-item h3 {
     text-align: center;
     font-size: 24px;
     color: #333;
     text-shadow: 2px 2px lightgray;
 }
 
-.list-item img{
+.list-item img {
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.list-item h1{
+.list-item h1 {
     font-size: 1.75em;
     padding-right: 50px;
 }
 
-.list-item:hover{
+.list-item:hover {
     background-color: var(--myOrange);
 }
 
-li{ list-style: none;   }  
+li {
+    list-style: none;
+}
 
-.plus{
+.plus {
     order: 2;
     margin-left: auto;
 }
 
-#main-footer{
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #f7f7f7;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#main-footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -205,23 +241,23 @@ li{ list-style: none;   }
     width: 100%;
 }
 
-#main-footer p{
+#main-footer p {
     margin: 3px;
 }
 
-@media(max-width: 600px){
-    #main{
+@media(max-width: 600px) {
+    #main {
         width: 100%;
         float: none;
     }
-    #sidebar{
+    #sidebar {
         width: 100%;
         float: none;
     }
 }
 
-@media(max-width: 1200px){
-    #boxes{
+@media(max-width: 1200px) {
+    #boxes {
         flex-direction: column;
     }
 }

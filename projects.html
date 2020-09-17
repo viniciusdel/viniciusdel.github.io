@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
- <title>V.S. Projects</title>
- <link rel="stylesheet" href="style.css" type="text/css">
+  <title>V.S. Projects</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -14,11 +15,11 @@
     </div>
   </header>
 
-  <nav id="navbar">
+  <nav class="navbar">
     <div class="container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Projects</a></li>
+        <li class="curr-nav"><a href="#">Projects</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -26,42 +27,71 @@
     </div>
   </nav>
 
-    <div class="container-2">
-      <br>
-      <h1>
-        Projects:
-      </h1>
-    </div>
+  <div class="container-2" style="padding-top: 20px; padding-bottom: 20px;">
+    <h1>
+      Projects:
+    </h1>
+  </div>
 
   <div class="container">
     <div class="list-container">
-        <ul>
-          <li>
-            <div class="list-item" id="project1">
+      <ul style="flex: 1;">
+        <li>
+          <button class="accordion">
+            <div class="list-item-2" id="project1">
               <img src="images/airbnb.png" alt="" height="50px">
               <h1>Machine Learning in Price Prediction</h1>
-              <img class="plus" src="images/plus.png" alt="" height="50px">
             </div>
-          </li>
+          </button>
 
-          <div class="list-item">
-            <img src="images/concrete.png" alt="" height="50px">
-            <li><h1>Senior Design Project: Concrete Smoothing Tool</h1></li>
-            <img class="plus" src="images/plus.png" alt="" height="50px">
+          <div class="panel">
+            <h3>Florida Polytechnic University. Lakeland, FL  |  Fall, 2019</h3>
+            <ul>
+              <li><p>Experimented with different Machine Learning Algorithms to make predictions on Airbnb prices in New York based on location, rating, naming, and more.</p></li>
+              <li><p>The project involved significant teamwork, data preparation, model research, model tuning, and precision testing.</p></li>
+            </ul>
           </div>
+        </li>
 
-          <div class="list-item">
-            <img src="images/paper.png" alt="" height="50px">
-            <li><h1>Resume Website</h1></li>
-            <img class="plus" src="images/plus.png" height="50px" style="justify-content: end;">
-          </div>
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/concrete.png" alt="" height="50px">
+              <h1>Senior Design Project: Concrete Smoothing Tool</h1>
+            </div>
+          </button>
 
-          <div class="list-item">
-            <img src="images/other.png" alt="" height="50px">
-            <li><h1>Other Projects</h1></li>
-            <img class="plus" src="images/plus.png" alt="" height="50px">
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
-        </ul>
+        </li>
+
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/paper.png" alt="" height="50px">
+              <h1>Resume Website</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/other.png" alt="" height="50px">
+              <h1>Other Projects</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -71,5 +101,43 @@
 
   <script src="main.js"></script>
 
+
+  <style>
+    .panel {
+      padding: 0 18px;
+      background-color: #f4f4f4;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .list-item-2 h1{
+      padding-right: 50px;
+    }
+
+    .panel ul{
+      padding-right: 40px;
+    }
+
+  </style>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
 </body>
-</html> 
+
+</html>
