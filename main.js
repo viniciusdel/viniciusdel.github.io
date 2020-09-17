@@ -17,3 +17,10 @@ for (i = 0; i < acc.length; i++) {
   });
 } 
 
+const acc2 = document.querySelectorAll(".list-item-2");
+
+acc2.forEach(acc2 => {
+    acc2.addEventListener("click", event => {
+        acc2.classList.toggle("active");
+    })
+})
