@@ -18,6 +18,7 @@ body{
 }
 
 .container-2{
+    display: flex;
     margin: auto;
     width: 60%;
     overflow: hidden;
@@ -29,6 +30,7 @@ body{
     width: 80%;
     overflow: hidden;
     justify-content: center;
+    align-content: center;
 }
 
 #main-header{
@@ -133,10 +135,6 @@ body{
     align-items: center;
 }
 
-.box li{
-    list-style: none;
-}
-
 .list-container{
     display: flex;
     margin: auto;
@@ -152,6 +150,28 @@ body{
     margin: 3px;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
+}
+
+.list-item{
+    display: flex;
+    padding: 10px;
+    border: 1px lightgray solid;
+    margin: 3px;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list-item h3{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    text-shadow: 2px 2px lightgray;
 }
 
 .list-item img{
@@ -172,33 +192,7 @@ li{
     list-style: none;
 }
 
-.box-link{
-    text-decoration: none;
-}
 
-.box-link :hover{
-    background-color: var(--myOrange);
-}
-
-.box img{
-    width: 60px;
-}
-
-.box h3{
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    text-shadow: 2px 2px lightgray;
-}
-
-.mini-box-1{
-    flex: 1;
-    margin-left: 20px;
-}
-
-.mini-box-2{
-    flex: 5;
-}
 
 #main-footer{
     background-color: #333;
