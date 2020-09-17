@@ -230,7 +230,7 @@ li {
     position: sticky;
 }
 
-.list-item-2:active::after{
+.list-item-2.active::after{
     transform: rotate(180deg);
 }
 
