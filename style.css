@@ -84,8 +84,9 @@ a {
     color: var(--myOrange);
 }
 
-.navbar .curr-nav {
+.navbar .curr-nav{
     font-weight: 700;
+    color: var(--myOrange);
 }
 
 #showcase {
@@ -126,11 +127,16 @@ a {
 
 #sidebar li {
     border-radius: 0%;
-    width: 70%;
+    width: 100%;
     background: #e6e6e6;
     margin-bottom: 8px;
     padding: 3px;
     text-align: right;
+}
+
+#sidebar li:hover{
+    background-color: var(--myOrange);
+    transition: 0.3s;
 }
 
 .box {
@@ -234,7 +240,6 @@ li {
     transform: rotate(180deg);
 }
 
-
 .panel {
     padding: 0 18px;
     background-color: #f7f7f7;
@@ -242,6 +247,27 @@ li {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 600px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
 #main-footer {
     background-color: #333;
