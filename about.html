@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
- <title>V.S. About</title>
- <link rel="stylesheet" href="style.css" type="text/css">
+  <title>V.S. About</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -26,28 +27,176 @@
     </div>
   </nav>
 
-  <div class="container">
-    <h1>Education</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui?</p>
-
-    <h1>Skills</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui?</p>
-
-    <h1>Work Experience</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui?</p>
-
-    <h1>Leadership Experience</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui?</p>
-
-    <h1>Projects</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui?</p>
+  <div class="container-2" style="padding-top: 20px; padding-bottom: 20px;">
+    <h1>
+      Resume
+    </h1>
   </div>
-  
+
+  <div class="container">
+    <div class="list-container">
+      <ul style="flex: 1;">
+        <li>
+          <button class="accordion">
+            <div class="list-item-2" id="project1">
+              <img src="images/book.png" alt="" height="50px">
+              <h1>Education</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <h3>Florida Polytechnic University. Lakeland, FL.</h3>
+            <ul>
+              <li>
+                <p style="color: rgb(228, 148, 0);"><b>Bachelor of Science in Computer Engineering.</b> Concentration:
+                  Machine Intelligence. 3.76 GPA</p>
+              </li>
+              <li>
+                <p><b>Relevant Coursework: </b>Circuit Design and Analysis, Object Oriented Programming, Project
+                  Management, Microprocessor Design, Machine Learning, Databases.</p>
+              </li>
+            </ul>
+
+            <h3>Florida Polytechnic University. Lakeland, FL.</h3>
+            <ul>
+              <li>
+                <p style="color: rgb(228, 148, 0);"> <b>Master's of Science in Computer Science.</b> Expected graduation
+                  in 2022.</p>
+              </li>
+              <li>
+                <p><b>Relevant Coursework: </b>Machine Learning, Software Security and Testing, Advanced Database
+                  Design, </p>
+              </li>
+              <li>
+                <p><b>Relevant Research: </b> Android Apps Security Testing using Machine Learning algorithms. </p>
+              </li>
+            </ul>
+
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/skills.png" alt="" height="50px">
+              <h1>Skills</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <h3>Computer Skills</h3>
+            <ul>
+              <li>
+                <p><b>Programming Languages: </b> Python, C++, C, Java, HTML, CSS, JavaScript, SQL.</p>
+              </li>
+              <li>
+                <p><b>Software: </b> Solidworks, MultiSIM, Android Studio, Outsystems, R, MATLAB.</p>
+              </li>
+              <li>
+                <p><b>Harware: </b> 3D Printing, Digital Logic Design, Microcomputers, IoT devices.</p>
+              </li>
+            </ul>
+            <h3>Additional Skills</h3>
+            <ul>
+              <li>
+                Adobe Creative Cloud, PowerBI, Adobe XD.
+              </li>
+            </ul>
+
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>
+                <p><b>Languages: </b> Portuguese, English, light Japanese.</p>
+              </li>
+              <li>
+                <p>Project Management experience.</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/work.png" alt="" height="50px">
+              <h1>Work Experience</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <h3>W.S. Badcock. Mulberry, FL. 2019. - Systems Developer Intern</h3>
+            <p>
+              Developed applications such as a “people counter” dashboard that monitored store traffic in over 365 stores using low-code
+              programs like Outsystems. Also worked with databases and data visualization following software requirements. 
+            </p>
+
+            <h3>Florida Polytechnic University. Lakeland, FL - 2018-2019  -  International Ambassador</h3>
+            <p>
+              Worked with the department of International Affairs at the university, creating immigration and border control documentation. 
+              Toured the campus with international dignitaries, and organized events for the international community.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">
+            <div class="list-item-2">
+              <img src="images/leader.png" alt="" height="50px">
+              <h1>Leadership Experience</h1>
+            </div>
+          </button>
+
+          <div class="panel">
+            <h3>Florida Polytechnic University. Fall 2017-2020  -  Presidential Ambassador</h3>
+            <p>Worked with the Office of the President with internal and external affairs, 
+              including tours to possible donors, fundraising events, and outreach projects.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <br><br>
   <footer id="main-footer">
     <p>Copyright &copy; 2020 Vinicius Seixas</p>
   </footer>
 
 
   <script src="main.js"></script>
+  <style>
+    .panel {
+      padding: 0 18px;
+      background-color: #f4f4f4;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .list-item-2 h1 {
+      padding-right: 50px;
+    }
+
+    .panel ul {
+      padding-right: 40px;
+    }
+  </style>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
-</html> 
+
+</html>

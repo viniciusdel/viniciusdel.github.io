@@ -219,7 +219,7 @@ li {
     margin-top: 10px;
 }
 
-.accordion:hover {
+.accordion:hover{
     background-color: #ccc;
 }
 
@@ -233,6 +233,7 @@ li {
 .list-item-2.active::after{
     transform: rotate(180deg);
 }
+
 
 .panel {
     padding: 0 18px;
