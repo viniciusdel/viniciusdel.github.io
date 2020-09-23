@@ -1,9 +1,15 @@
 Todo in website:
 
-    1. [Done]  Projects and 'see more' functionality to show / hide projects.
-    2. [+]  Gallery with 'click into' picture functionality.
-    3. [+]  Make 'recent achievements prettier' and hover prone.
-    4. [+]  Add phone number when clicked. 
-    5. [+]  Maybe add some animations? Idk.
-    6. [Done]  Make current page highlighted on navbar.
-    
+[Done]  Projects and 'see more' functionality to show / hide projects.
+[Done]  Gallery with 'click into' picture functionality.
+[Done]  Make 'recent achievements prettier' and hover prone.
+[Done]  Maybe add some animations? Idk.
+[Done]  Make current page highlighted on navbar.
+
+===========================================================================
+
+[+]     Add phone number when clicked. 
+[+]     convert everything into icons.
+[+]     Change accent colors.
+[+]     Add more colors.
+[+]     Finishing touches.
