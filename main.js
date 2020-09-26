@@ -25,3 +25,4 @@ acc2.forEach(acc2 => {
         acc2.classList.toggle("active");
     })
 })
+
