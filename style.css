@@ -1,9 +1,21 @@
 :root {
-    --myOrange: rgb(228, 148, 0);
+    --accent1: #0c0032;
+    --accent2: #4b6b25;
+    --accent3: #61892F;
+    --accent4: #86C232;
+    --accent5: #a0e93a;
+}
+
+.text-accent1 {
+    color: var(--accent3);
+}
+
+.text-accent2 {
+    color: var(--accent4);
 }
 
 body {
-    background-color: #000000;
+    background-color: #222629;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
@@ -17,16 +29,22 @@ body {
     overflow: hidden;
 }
 
-.fab, .fas, far{
+/*ICON MODIFICATIONS*/
+.fab, .fas, .far{
     font-size: 70px;
     padding-left: 30px;
 }
 
-.fab.fa-linkedin{
+.fa-airbnb, .fa-ruler-horizontal, .fa-file-code, .fa-ellipsis-h, .fa-medal, .fa-briefcase, .fa-cogs, .fa-book{
+    color: var(--accent3);
+    font-size: 60px;
+}
+
+.fa-linkedin{
     color: rgb(102, 181, 255);
 }
 
-.fas.fa-envelope-open-text, .fa-phone{
+.fa-envelope-open-text, .fa-phone{
     color: white;
 }
 
@@ -51,7 +69,7 @@ a {
 }
 
 #main-header {
-    background-color: black;
+    background-color: #0f1113;
     color: white;
     text-shadow: #555;
     padding: 15px;
@@ -69,7 +87,7 @@ a {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #15181a;
     color: white;
 }
 
@@ -87,23 +105,25 @@ a {
     text-decoration: none;
     font-size: 20px;
     padding-right: 15px;
+    transition: 0.2s ease-in-out;
 }
 
 .navbar a:hover {
-    color: var(--myOrange);
+    color: var(--accent3);
+    transition: 0.2s ease-in-out;
 }
 
 .navbar a:active {
-    color: var(--myOrange);
+    color: var(--accent4)
 }
 
 .navbar .curr-nav{
     font-weight: 700;
-    color: var(--myOrange);
+    color: var(--accent4)
 }
 
 #showcase {
-    background-image: url('images/showcase.jpg');
+    background-image: url('images/showcase2.jpg');
     min-height: 230px;
     background-position: center right;
     margin-bottom: 30px;
@@ -141,15 +161,18 @@ a {
 #sidebar li {
     border-radius: 0%;
     width: 100%;
-    background: #111111;
+    background: var(--accent2);
     margin-bottom: 8px;
     padding: 3px;
     text-align: right;
+    opacity: 50%;
+    transition: 0.3s;
 }
 
 #sidebar li:hover{
-    background-color: var(--myOrange);
-    transition: 0.3s;
+    background-color: var(--accent3);
+    transition: 0.3s ease-in-out;
+    opacity: 100%;
 }
 
 .box {
@@ -185,6 +208,7 @@ a {
     justify-content: center;
     text-decoration: none;
     min-width: 350px;
+    transition: 0.2s ease-in-out; 
 }
 
 .list-item-2 {
@@ -215,10 +239,12 @@ a {
 .list-item h1 {
     font-size: 1.75em;
     padding-right: 50px;
+    transition: 0.2s ease-in-out; 
 }
 
 .list-item:hover {
-    background-color: var(--myOrange);
+    background-color: var(--accent3);
+    transition: 0.2s ease-in-out; 
 }
 
 li {
@@ -240,6 +266,10 @@ li {
     outline: none;
     transition: 0.4s;
     margin-top: 10px;
+}
+
+.accordion h1{
+    font-size: 1.7em;
 }
 
 .accordion:hover{
