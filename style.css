@@ -334,7 +334,7 @@ div.desc {
     font-size: 0.8em;
 }
 
-#main-footer {
+.main-footer {
     background-color: rgb(20, 20, 20);
     color: white;
     text-align: center;
@@ -344,7 +344,7 @@ div.desc {
     width: 100%;
 }
 
-#main-footer p {
+.main-footer p {
     margin: 3px;
 }
 
@@ -372,7 +372,10 @@ div.desc {
     .list-container{
         width: 95%;
     }
-    
+
+    .main-footer{
+        display: none;
+    }
 }
 
 @media(max-width: 1200px) {
