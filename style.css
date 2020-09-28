@@ -80,13 +80,13 @@ a {
 .main-header {
     background-color: #0f1113;
     color: white;
-    text-shadow: #555;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
 }
 
 .main-header h1 {
     padding-left: 10%;
+    text-shadow: 4px #4b6b25;
 }
 
 .page-title {
@@ -217,7 +217,7 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    min-width: 350px;
+    min-width: 320px;
     transition: 0.2s ease-in-out;
 }
 
@@ -361,26 +361,18 @@ div.desc {
     .container {
         width: 95%;
     }
-    .main-header h1 {
-        font-size: 1.8em;
-        padding-left: 0;
-    }
-    .main-header{
-        text-align: center;
-    }
     body {
         font-size: 23px;
     }
-
-    .navbar{
-        display: flex;
-        align-items: center;
-        text-align: center;
+    .accordion h1{
+        font-size: 17px;
+    }
+    .list-item-2 h1{
+        padding-right: 5px;
     }
 
-    .navbar a{
-        padding-right: 8px;
-    }
+
+    
 }
 
 @media(max-width: 1200px) {
@@ -395,6 +387,7 @@ div.desc {
     }
     .container-2 {
         width: 85%;
+        padding-bottom: 0;
     }
     .list-container {
         width: 95%;
@@ -404,7 +397,24 @@ div.desc {
         padding-left: 0;
     }
 
-    
+    .main-header h1 {
+        font-size: 1.8em;
+        padding-left: 0;
+    }
+    .main-header{
+        text-align: center;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar a{
+        padding-right: 8px;
+    }
+    .container-2 h1{
+        font-size: 1.4em;
+    }
     .main-footer {
         display: none;
     }
