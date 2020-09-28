@@ -47,11 +47,12 @@ body {
 .fab, .fas, .far {
     font-size: 70px;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 .fa-airbnb, .fa-ruler-horizontal, .fa-file-code, .fa-ellipsis-h, .fa-medal, .fa-briefcase, .fa-cogs, .fa-book {
     color: var(--accent3);
-    font-size: 60px;
+    font-size: 55px;
 }
 
 .fa-linkedin {
@@ -356,6 +357,9 @@ div.desc {
         width: 100%;
         float: none;
     }
+    .container{
+        width: 95%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -364,5 +368,11 @@ div.desc {
     }
     .contact-container {
         flex-direction: column;
+    }
+    .container{
+        width: 95%;
+    }
+    .container-2{
+        width: 85%;
     }
 }
