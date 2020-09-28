@@ -371,6 +371,16 @@ div.desc {
     body {
         font-size: 23px;
     }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar a{
+        padding-right: 8px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -389,6 +399,12 @@ div.desc {
     .list-container {
         width: 95%;
     }
+
+    .list-container ul{
+        padding-left: 0;
+    }
+
+    
     .main-footer {
         display: none;
     }
