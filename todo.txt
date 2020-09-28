@@ -10,9 +10,9 @@ Todo in website:
 [Done]  Add more colors.
 ===========================================================================
 
-[+]     Add phone number when clicked. 
-[+]     Make it more responsive (phone version)
-[+]     Finishing touches.
+[+]                 Add phone number when clicked. 
+[In Progress]       Make it more responsive (phone version)
+[+]                 Finishing touches.
 
 
 

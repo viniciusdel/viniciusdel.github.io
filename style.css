@@ -217,7 +217,7 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    min-width: 320px;
+    min-width: 300px;
     transition: 0.2s ease-in-out;
 }
 
@@ -305,6 +305,11 @@ li {
     transition: max-height 0.2s ease-out;
 }
 
+.panel ul{
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
 #photos {
     /* Prevent vertical gaps */
     line-height: 0;
@@ -362,7 +367,7 @@ div.desc {
         width: 95%;
     }
     body {
-        font-size: 23px;
+        font-size: 17px;
     }
     .accordion h1{
         font-size: 17px;
@@ -370,9 +375,14 @@ div.desc {
     .list-item-2 h1{
         padding-right: 5px;
     }
-
-
-    
+    .fab, .fas, .far {
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    .panel ul{
+        padding-right: 10px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -394,7 +404,8 @@ div.desc {
     }
 
     .list-container ul{
-        padding-left: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .main-header h1 {
@@ -408,6 +419,7 @@ div.desc {
         display: flex;
         align-items: center;
         text-align: center;
+        font-size: 17px;
     }
     .navbar a{
         padding-right: 8px;
