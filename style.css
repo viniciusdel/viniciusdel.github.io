@@ -211,13 +211,13 @@ a {
 
 .list-item {
     display: flex;
-    padding: 10px;
+    padding: 30px;
     border: 1px lightgray solid;
     margin: 3px;
+    min-width: 300px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    min-width: 300px;
     transition: 0.2s ease-in-out;
 }
 
@@ -305,7 +305,7 @@ li {
     transition: max-height 0.2s ease-out;
 }
 
-.panel ul{
+.panel ul {
     padding-right: 40px;
     padding-left: 20px;
 }
@@ -369,10 +369,10 @@ div.desc {
     body {
         font-size: 17px;
     }
-    .accordion h1{
+    .accordion h1 {
         font-size: 17px;
     }
-    .list-item-2 h1{
+    .list-item-2 h1 {
         padding-right: 5px;
     }
     .fab, .fas, .far {
@@ -380,8 +380,40 @@ div.desc {
         padding-left: 10px;
         padding-right: 30px;
     }
-    .panel ul{
+    .panel ul {
         padding-right: 10px;
+    }
+    .navbar .curr-nav {
+        font-weight: 400;
+        color: var(--accent4)
+    }
+    .list-item-2 {
+        margin: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .list-item-2::after {
+        font-size: 2em;
+    }
+
+    .list-item{
+        padding: 0;
+    }
+
+    .list-item {
+        border: 1px lightgray solid;
+        margin: 3px;
+        min-width: none;
+    }
+
+    .list-item h3{
+        padding: 10px;
+    }
+
+    #photos {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }
 
@@ -402,29 +434,27 @@ div.desc {
     .list-container {
         width: 95%;
     }
-
-    .list-container ul{
+    .list-container ul {
         padding-left: 5px;
         padding-right: 5px;
     }
-
     .main-header h1 {
         font-size: 1.8em;
         padding-left: 0;
     }
-    .main-header{
+    .main-header {
         text-align: center;
     }
-    .navbar{
+    .navbar {
         display: flex;
         align-items: center;
         text-align: center;
-        font-size: 14px;
     }
-    .navbar a{
-        padding-right: 8px;
+    .navbar a {
+        padding-right: 6px;
+        font-size: 18px;
     }
-    .container-2 h1{
+    .container-2 h1 {
         font-size: 1.4em;
     }
     .main-footer {

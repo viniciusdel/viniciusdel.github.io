@@ -14,5 +14,8 @@ Todo in website:
 [In Progress]       Make it more responsive (phone version)
 [+]                 Finishing touches.
 
+[+]                 Remake landing page with headshot
+[+]                 Make gallery responsive
+
 
 
