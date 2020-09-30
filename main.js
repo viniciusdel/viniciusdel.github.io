@@ -26,3 +26,8 @@ acc2.forEach(acc2 => {
     })
 })
 
+var phone = document.getElementById("phone-item");
+
+phone.addEventListener("click", event => {
+  document.getElementById("phone-number").innerHTML = "(651) 332-6223";
+})
