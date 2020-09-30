@@ -338,13 +338,7 @@ div.desc {
     margin: 3px;
 }
 
-@media(max-width: 600px) {
-    .container {
-        width: 95%;
-    }
-    body {
-        font-size: 17px;
-    }
+@media(max-width: 1200px) {
     #main {
         padding: 9px;
         box-sizing: border-box;
@@ -357,9 +351,69 @@ div.desc {
     }
     #sidebar img {
         border-radius: 50%;
-        width: 200px;
+        width: 300px;
         border: #86C232 2px solid;
         padding: 5px;
+    }
+    .container-2 {
+        flex-direction: column-reverse;
+        width: 95%;
+        align-items: center;
+        align-content: center;
+    }
+    #boxes {
+        flex-direction: column;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .container {
+        width: 95%;
+    }
+    .container-2 {
+        width: 85%;
+        padding-bottom: 0;
+    }
+    .list-container {
+        width: 95%;
+    }
+    .list-container ul {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .main-header h1 {
+        font-size: 1.8em;
+        padding-left: 0;
+    }
+    .main-header {
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar a {
+        padding-right: 6px;
+        font-size: 18px;
+    }
+    .container-2 h1 {
+        font-size: 1.4em;
+    }
+    .main-footer {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    #sidebar img {
+        width: 200px;
+    }
+    .container {
+        width: 95%;
+    }
+    body {
+        font-size: 17px;
     }
     #showcase {
         min-height: 100px;
@@ -371,18 +425,12 @@ div.desc {
         padding-top: 0px;
         text-shadow: 3px 3px #333;
     }
-    .container-2 {
-        flex-direction: column-reverse;
-        width: 95%;
-        align-items: center;
-        align-content: center;
-    }
     .container-3 h1 {
         font-size: 1.4em;
     }
-
     .container-3{
-        text-align: center;
+        align-items: center;
+        align-content: center;
     }
     .accordion h1 {
         font-size: 17px;
@@ -428,47 +476,9 @@ div.desc {
     }
 }
 
-@media(max-width: 1200px) {
-    #boxes {
-        flex-direction: column;
-    }
-    .contact-container {
-        flex-direction: column;
-    }
-    .container {
-        width: 95%;
-    }
-    .container-2 {
-        width: 85%;
-        padding-bottom: 0;
-    }
-    .list-container {
-        width: 95%;
-    }
-    .list-container ul {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .main-header h1 {
-        font-size: 1.8em;
-        padding-left: 0;
-    }
-    .main-header {
-        text-align: center;
-    }
-    .navbar {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
+@media(max-width: 400px){
     .navbar a {
         padding-right: 6px;
-        font-size: 18px;
-    }
-    .container-2 h1 {
-        font-size: 1.4em;
-    }
-    .main-footer {
-        display: none;
+        font-size: 16.5px;
     }
 }
