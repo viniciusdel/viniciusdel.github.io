@@ -98,6 +98,7 @@ a {
 .navbar {
     background-color: #15181a;
     color: white;
+    margin-bottom: 10px;
 }
 
 .navbar ul {
@@ -149,40 +150,23 @@ a {
 }
 
 #main {
-    float: left;
-    width: 70%;
+    flex: 2;
     padding: 0 30px;
     box-sizing: border-box;
 }
 
 #sidebar {
-    float: right;
-    width: 30%;
+    flex: 1;
     padding: 0 10px;
     box-sizing: border-box;
+    padding-top: 30px;
 }
 
-#sidebar ul {
-    list-style: none;
-    border: 1px #555;
-    padding-left: 0;
-}
-
-#sidebar li {
-    border-radius: 0%;
-    width: 100%;
-    background: var(--accent2);
-    margin-bottom: 8px;
-    padding: 3px;
-    text-align: right;
-    opacity: 50%;
-    transition: 0.3s;
-}
-
-#sidebar li:hover {
-    background-color: var(--accent3);
-    transition: 0.3s ease-in-out;
-    opacity: 100%;
+#sidebar img {
+    border-radius: 50%;
+    width: 300px;
+    border: #86C232 2px solid;
+    padding: 5px;
 }
 
 .box {
@@ -355,19 +339,50 @@ div.desc {
 }
 
 @media(max-width: 600px) {
-    #main {
-        width: 100%;
-        float: none;
-    }
-    #sidebar {
-        width: 100%;
-        float: none;
-    }
     .container {
         width: 95%;
     }
     body {
         font-size: 17px;
+    }
+    #main {
+        padding: 9px;
+        box-sizing: border-box;
+    }
+    #sidebar {
+        display: flex;
+        padding: 0 10px;
+        box-sizing: border-box;
+        padding-top: 30px;
+    }
+    #sidebar img {
+        border-radius: 50%;
+        width: 200px;
+        border: #86C232 2px solid;
+        padding: 5px;
+    }
+    #showcase {
+        min-height: 100px;
+        margin-bottom: 5px;
+    }
+    #showcase h1 {
+        font-size: 30px;
+        line-height: 1.6em;
+        padding-top: 0px;
+        text-shadow: 3px 3px #333;
+    }
+    .container-2 {
+        flex-direction: column-reverse;
+        width: 95%;
+        align-items: center;
+        align-content: center;
+    }
+    .container-3 h1 {
+        font-size: 1.4em;
+    }
+
+    .container-3{
+        text-align: center;
     }
     .accordion h1 {
         font-size: 17px;
@@ -395,21 +410,17 @@ div.desc {
     .list-item-2::after {
         font-size: 2em;
     }
-
-    .list-item{
+    .list-item {
         padding: 0;
     }
-
     .list-item {
         border: 1px lightgray solid;
         margin: 3px;
-        min-width: none;
+        min-width: 50px;
     }
-
-    .list-item h3{
+    .list-item h3 {
         padding: 10px;
     }
-
     #photos {
         -webkit-column-count: 1;
         -moz-column-count: 1;
