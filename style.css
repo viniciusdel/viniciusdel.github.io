@@ -165,6 +165,7 @@ a {
 #sidebar img {
     border-radius: 50%;
     width: 300px;
+    height: 300px;
     border: #86C232 2px solid;
     padding: 5px;
 }
@@ -352,6 +353,7 @@ div.desc {
     #sidebar img {
         border-radius: 50%;
         width: 300px;
+        height: 300px;
         border: #86C232 2px solid;
         padding: 5px;
     }
@@ -408,6 +410,7 @@ div.desc {
 @media(max-width: 600px) {
     #sidebar img {
         width: 200px;
+        height: 200px;
     }
     .container {
         width: 95%;
