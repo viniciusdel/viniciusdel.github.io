@@ -339,6 +339,12 @@ div.desc {
     margin: 3px;
 }
 
+@media(max-width: 1850px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
 @media(max-width: 1200px) {
     #main {
         padding: 9px;
@@ -431,7 +437,7 @@ div.desc {
     .container-3 h1 {
         font-size: 1.4em;
     }
-    .container-3{
+    .container-3 {
         align-items: center;
         align-content: center;
     }
@@ -479,7 +485,7 @@ div.desc {
     }
 }
 
-@media(max-width: 400px){
+@media(max-width: 400px) {
     .navbar a {
         padding-right: 6px;
         font-size: 16.5px;
